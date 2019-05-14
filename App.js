@@ -1,7 +1,35 @@
 import React from 'react';
-import { Text, Button, StyleSheet, View } from 'react-native';
-import { Constants, Speech } from 'expo';
-import Touchable from 'react-native-platform-touchable';
+// import { Text, Button, StyleSheet, View, Image } from 'react-native';
+// import { Constants, Speech } from 'expo';
+// import Touchable from 'react-native-platform-touchable';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+
+import { Button, View, Text } from 'react-native';
+import HomeScreen from './home-screen.js';
+import GalleryScreen from './gallery-screen';
+
+const RootStack = createStackNavigator(
+  {
+    Home: {
+      screen: HomeScreen
+    },
+    Gallery: {
+      screen: GalleryScreen
+    }
+  },
+  {
+    initialRouteName: 'Home'
+  }
+);
+
+const AppContainer = createAppContainer(RootStack);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}
+/*
 
 const EXAMPLES = [
   { language: 'en-US', text: "Your code sucks, but that's ok." },
@@ -57,9 +85,7 @@ export default class TextToSpeechScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.headerContainer}>
-          <Text style={styles.headerText}>Select a phrase</Text>
-        </View>
+        <Header />
 
         <View style={styles.examplesContainer}>
           {EXAMPLES.map(this._renderExample)}
@@ -245,3 +271,4 @@ const styles = StyleSheet.create({
     marginBottom: 10
   }
 });
+*/
