@@ -4,13 +4,14 @@ import { Constants, Speech } from 'expo';
 import Touchable from 'react-native-platform-touchable';
 
 const EXAMPLES = [
-  { language: 'en', text: 'Your code sucks.' },
-  { language: 'en', text: "That's gross." },
+  { language: 'en-US', text: "Your code sucks, but that's ok." },
+  { language: 'en', text: "That's just gross." },
   {
     language: 'en',
     text: 'But can you imagine a world where that might be the case?'
   },
-  { language: 'en', text: 'Trust me, it works.' }
+  { language: 'en', text: 'Just trust me, it works.' },
+  { language: 'en', text: 'Swish and flick.' }
 ];
 
 if (!Constants.isDevice) {
