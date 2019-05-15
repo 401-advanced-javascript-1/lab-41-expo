@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-import HomeScreen from './home-screen.js';
-import GalleryScreen from './gallery-screen';
+import HomeScreen from './screens/home/home-screen.js';
+import GalleryScreen from './screens/gallery/gallery-screen.js';
 
 const RootStack = createStackNavigator(
   {
@@ -22,14 +22,6 @@ const AppContainer = createAppContainer(RootStack);
 
 export default class App extends React.Component {
   render() {
-    return (
-      <AppContainer
-        style={{
-          borderWidth: 2,
-          borderColor: 'green',
-          backgroundColor: 'blue'
-        }}
-      />
-    );
+    return <AppContainer />;
   }
 }

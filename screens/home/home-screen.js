@@ -1,25 +1,22 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import { Constants, Speech } from 'expo';
+import { View } from 'react-native';
 
-import Header from './header.js';
-import JohnFace from './johnface.js';
-import Footer from './footer.js';
+import Header from '../../components/header';
+import JohnFace from '../../components/johnface';
+import Footer from '../../components/footer';
 
 export default class HomeScreen extends React.Component {
   render() {
     return (
       <View
         style={{
-          borderWidth: 2,
-          borderColor: 'red',
+          alignItems: 'center',
           display: 'flex',
+          height: '100%',
           justifyContent: 'space-between'
         }}
       >
-        <Header />
-        {/* <Text>Home Screen</Text> */}
-        {/* <Text>There's a John image here that you can press!</Text> */}
+        <Header content="Tap for a John-ism" />
         <JohnFace />
         <Footer
           title="Gallery"
