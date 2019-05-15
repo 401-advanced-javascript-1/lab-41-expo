@@ -35,4 +35,5 @@
 
 #### UML
 
-Link to an image of the UML for your application and response to events
+![Whiteboard 1](https://i.imgur.com/VWHw6Tc.jpg)
+![Whiteboard 2](https://i.imgur.com/4Cc3HNZ.jpg)
