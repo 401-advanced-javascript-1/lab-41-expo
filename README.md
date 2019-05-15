@@ -26,18 +26,12 @@
 
 ### Setup
 
-- `expo start`
-- Scan QR code with Expo mobile app
+- Download the Expo mobile app on a smartphone
 
 #### Running the app
 
-- `npm start`
-- Endpoint: `/`
-- Endpoint: `/foo/bar/`
-  - Returns a JSON object with abc in it.
-- Endpoint: `/bing/zing/`
-
-  - Returns a JSON object with xyz in it.
+- `expo start`
+- Scan QR code with Expo mobile app
 
 #### UML
 
