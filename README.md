@@ -6,6 +6,8 @@
 
 ### Links and Resources
 
+- [Published app on Expo](https://expo.io/@billybunn/lab-41)
+
 - [PR](https://github.com/401-advanced-javascript-1/lab-41-expo/pull/1)
 
 ### Modules
