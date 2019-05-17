@@ -4,15 +4,19 @@ import { Speech } from 'expo';
 import Touchable from 'react-native-platform-touchable';
 
 const JOHN_PHRASES = [
+  'John is bald',
   "Your code sucks, but that's ok.",
+  'Developers are lazy',
+  "So, there's my really amazing app",
   "That's just gross.",
-  'But can you imagine a world where that might be the case?',
   'Just trust me, it works.',
+  'But can you imagine a world where that might be the case?',
   "There's some magic going on there.",
   'Cards and decks baby!',
   'Everything on the internet is just cards and decks',
   'I used to work at this place called CDK',
-  'Seriously? Come on!'
+  'Seriously? Come on!',
+  'Mic? Drop.'
 ];
 
 const JOHN_FACE_IMGS = [
